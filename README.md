@@ -39,6 +39,7 @@ $ npm run dev : correr proyecto
 ## github
 ***
 Para acceder al modulo de inventario: http://localhost:port/inventario
-Perfil github: 
+
+Perfil github: https://github.com/sebaguimad/Portafolio-mod-7-Sebastian-Aguilera
 
 
