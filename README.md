@@ -5,7 +5,7 @@
 4. [github y deploy pages]
 
 
-### De que trata el proyecto
+### ¿De qué trata el proyecto?
 ***
 Módulo 7 Desarrollo de aplicaciones WEB con EXPRESS
 
@@ -36,7 +36,7 @@ $ cd ../path/to/the/file
 $ npm i : inicializar proyecto
 $ npm run dev : correr proyecto
 ```
-## github
+## Github
 ***
 Para acceder al modulo de inventario: http://localhost:port/inventario
 
