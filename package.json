@@ -1,0 +1,24 @@
+{
+  "name": "portafolio-modulo-6",
+  "version": "1.0.0",
+  "description": "portafolio modulo 6 desarrollador full stack en javascript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "nicolas escobar villegas",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "moment": "^2.29.4",
+    "nodemon": "^2.0.20",
+    "pg": "^8.10.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.29.3",
+    "uuid": "^9.0.0"
+  }
+}
