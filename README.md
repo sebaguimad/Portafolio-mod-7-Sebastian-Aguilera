@@ -1,8 +1,8 @@
 ## Table of Contents
 1. [De que trata el proyecto]
-2. [que tecnologias se usaron?]
+2. [¿Qué tecnologias se usaron?]
 3. [Dependencias]
-4. [github y deploy pages]
+4. [Github y deploy pages]
 
 
 ### ¿De qué trata el proyecto?
