@@ -126,20 +126,25 @@ export const addProduct = async (req, res) => {
 }
 
 export const getVentas = async (req,res) =>{
-  let ordenes = await Orden.findAll({raw :false ,include :Detalle_orden});
-  console.log(ordenes[0].dataValues)
-  let productosFormatiados = ordenes.map(producto => {
-    let objectProducto = {
-      id: producto.dataValues.id,
-      fecha: producto.dataValues.fecha,
-      tipo: producto.dataValues.tipo_boleta,
-      // precio: producto.dataValues.precio,
-    }
-    return objectProducto;
-  })
-  console.log(productosFormatiados)
-  res.render('ventas',{
-    title : 'ventas',
-    ordenes : productosFormatiados
-  })
+  try {
+    let ordenes = await Orden.findAll({raw :false ,include :Detalle_orden});
+    console.log(ordenes[0].dataValues)
+    let productosFormatiados = ordenes.map(producto => {
+      let objectProducto = {
+        id: producto.dataValues.id,
+        fecha: producto.dataValues.fecha,
+        tipo: producto.dataValues.tipo_boleta,
+        // precio: producto.dataValues.precio,
+      }
+      return objectProducto;
+    })
+    console.log(productosFormatiados)
+    res.render('ventas',{
+      title : 'ventas',
+      ordenes : productosFormatiados
+    })
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ code: 500, message: "Error al obtener las ventas." })
+  }
 }
